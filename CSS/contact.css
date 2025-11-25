@@ -6,6 +6,13 @@ body {
     padding-top: 64px;
 }
 
+main {
+    max-width: 1000px;
+    margin: 1.2rem auto;
+    padding: 0 1rem
+}
+
+
 .site-header {
     background: #181818;
     border-bottom: 1px solid #bbc;
@@ -15,6 +22,22 @@ body {
     top: 0;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.site-footer {
+    background: #3c3c3c;
+    border-top: 1px solid #bbc;
+    color: #bbb;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.site-footer .container {
+    display: block; 
+    text-align: center;
+    height: 220px;
 }
 
 .container {
@@ -76,6 +99,49 @@ body {
     color: #bbc;
 }
 
+.lineb {
+    width: 80%;
+    height: 2px;
+    background-color: #222; 
+    margin: 40px auto;       
+    border-radius: 2px;
+}
+
+.linew {
+    width: 80%;
+    height: 2px;
+    background-color: #ddd; 
+    margin: 40px auto;       
+    border-radius: 2px;
+}
+
+#yt-button, #insta-button {
+    color: #ddd;
+    font-size: 35px;
+    margin: 0 12px;
+}
+
+#yt-button:hover, #insta-button:hover {
+    color: #797979;
+    font-size: 35px;
+    margin: 0 12px;
+}
+
+.bandbig {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.bandsmall {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    display: none;
+}
+
 /* Mobile style */
 @media (max-width:768px) {
     .container {
@@ -90,7 +156,7 @@ body {
         left: 0;
         right: 0;
         top: 64px;
-        background: #fff;
+        background: #252525;
         border-bottom: 1px solid #e6e6e6;
         padding: 0.5rem 1rem;
         display: none;
@@ -114,10 +180,11 @@ body {
     #nav-toggle:checked~.nav {
         display: flex
     }
+    .bandbig {
+        display: none;
+    }
+    .bandsmall {
+        display: block;
+    }
 }
 
-main {
-    max-width: 1000px;
-    margin: 1.2rem auto;
-    padding: 0 1rem
-}
