@@ -6,6 +6,13 @@ body {
     padding-top: 64px;
 }
 
+main {
+    max-width: 1000px;
+    margin: 1.2rem auto;
+    padding: 0 1rem
+}
+
+
 .site-header {
     background: #181818;
     border-bottom: 1px solid #bbc;
@@ -30,7 +37,7 @@ body {
 .site-footer .container {
     display: block; 
     text-align: center;
-    height: 500px;
+    height: 220px;
 }
 
 .container {
@@ -114,6 +121,27 @@ body {
     margin: 0 12px;
 }
 
+#yt-button:hover, #insta-button:hover {
+    color: #797979;
+    font-size: 35px;
+    margin: 0 12px;
+}
+
+.bandbig {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.bandsmall {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    display: none;
+}
+
 /* Mobile style */
 @media (max-width:768px) {
     .container {
@@ -152,10 +180,11 @@ body {
     #nav-toggle:checked~.nav {
         display: flex
     }
+    .bandbig {
+        display: none;
+    }
+    .bandsmall {
+        display: block;
+    }
 }
 
-main {
-    max-width: 1000px;
-    margin: 1.2rem auto;
-    padding: 0 1rem
-}
