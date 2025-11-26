@@ -31,7 +31,7 @@
             <h1>Kontakt</h1>
 
             <form id="contactForm" onsubmit="messageSend()">
-                <h2>Contact Me</h2>
+                <h2>Kontaktieren Sie uns</h2>
                 <div>
                     <label for="vorname">Vorname:</label>
                     <input type="text" id="vorname" name="vorname" required pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
@@ -45,15 +45,15 @@
                     <input type="email" id="email" name="email" required pattern="^[\.\-\_]*[@]{1}[a-z]+[\.][a-z]+$">
                 </div>
                 <div>
-                    <label for="message">Message:</label><br>
+                    <label for="message">Nachricht:</label><br>
                     <textarea id="message" name="message" rows="4" cols="50" required pattern=".*"></textarea><br><br>
                 </div>
-                <input type="submit" value="Send Message" class="button">
+                <input type="submit" value="Senden" class="button">
             </form>
 
             <script>
                 function messageSend() {
-                alert("Thank you for reaching out! I will get back to you as soon as possible.");
+                alert("Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.");
                     document.getElementById('contactForm').reset();
                 }
             </script>
