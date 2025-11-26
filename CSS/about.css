@@ -209,6 +209,7 @@ h3 {
         text-align: center;
     }
 
+    /* Bandvorstellung */
     .band-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
