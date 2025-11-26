@@ -18,10 +18,24 @@ h1 {
     color: #fff;
     text-align: center;
 }
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b4b4b4;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d3d3d3;
+    text-align: left;
+    margin: 0;
+}
 /* Header */
 .site-header {
     background: #181818;
-    border-bottom: 1px solid #bbc;
+    border-bottom: 1px solid #aaaaaa;
     position: fixed;
     left: 0;
     right: 0;
@@ -116,7 +130,7 @@ h1 {
 .linew {
     width: 80%;
     height: 2px;
-    background-color: #ddd; 
+    background-color: #959595; 
     margin: 40px auto;       
     border-radius: 2px;
 }
@@ -147,6 +161,72 @@ h1 {
     margin-bottom: 1.2rem;
     display: none;
 }
+/* Abstand */
+.abstand {
+    margin-bottom: 100px;
+}
+/* Konzert Tabelle */
+#massive {
+    font-size: 10rem;
+    text-align: right;
+    vertical-align: middle;
+    width: 50%;
+    font-weight: bold;
+    
+}
+
+.abstand1 {
+    color: transparent;
+    font-size: 2rem;
+}
+
+.konzert {
+    width: 100%;
+}
+
+.linewthin {
+    width: 80%;
+    height: 2px;
+    background-color: #959595; 
+    margin: 0px auto;       
+    border-radius: 2px;
+}
+
+.beschreibung {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.grau {
+    color: #888;
+}
+
+button {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*Bisherige Konzerte*/
+.bkonzerte {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lineshort {
+    width: 30%;
+    height: 2px;
+    background-color: #959595; 
+    margin: 20px auto;       
+    border-radius: 2px;
+}
+
 
 /* Mobile style */
 @media (max-width:768px) {
