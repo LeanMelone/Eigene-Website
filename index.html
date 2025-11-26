@@ -45,10 +45,42 @@
             <img src="IMG/bandbig.png" alt="Bandfoto" id="bild">
         </div>
 
+        <div class="linew"></div>
+
     </main>
 
     <footer class="site-footer">
         <div class="container">
+            <h1>Kontakt</h1>
+
+            <form id="contactForm" onsubmit="messageSend()">
+                <h2>Contact Me</h2>
+                <div>
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" id="vorname" name="vorname" required pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
+                </div>
+                <div>
+                    <label for="nachname">Nachname:</label>
+                    <input type="text" id="nachname" name="nachname" required pattern="^([A-ZÄÖÜ][a-zäöü]+(-)?([A-ZÄÖÜ]([a-zäöü]+))?)$">
+                </div>
+                <div>
+                    <label for="email">E-Mail Adresse:</label>
+                    <input type="email" id="email" name="email" required pattern="^[\.\-\_]*[@]{1}[a-z]+[\.][a-z]+$">
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required pattern=".*"></textarea><br><br>
+                </div>
+                <input type="submit" value="Send Message" class="button">
+            </form>
+            
+            <script>
+                function messageSend() {
+                alert("Thank you for reaching out! I will get back to you as soon as possible.");
+                    document.getElementById('contactForm').reset();
+                }            
+            </script>
+
             <p class="brand">The Returners</p>
             <div class="lineb"></div>
             <a href="https://www.instagram.com/the_returners_5/" target="_blank" id="insta-button"><i class="fa fa-instagram"></i></a>

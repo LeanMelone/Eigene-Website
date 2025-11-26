@@ -12,7 +12,13 @@ main {
     padding: 0 1rem
 }
 
-
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+/* Header */
 .site-header {
     background: #181818;
     border-bottom: 1px solid #bbc;
@@ -23,7 +29,7 @@ main {
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
-
+/* Footer */
 .site-footer {
     background: #3c3c3c;
     border-top: 1px solid #bbc;
@@ -37,9 +43,9 @@ main {
 .site-footer .container {
     display: block; 
     text-align: center;
-    height: 220px;
+    height: 950px;
 }
-
+/* Header */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -98,7 +104,7 @@ main {
     cursor: pointer;
     color: #bbc;
 }
-
+/* Linie */
 .lineb {
     width: 80%;
     height: 2px;
@@ -114,7 +120,7 @@ main {
     margin: 40px auto;       
     border-radius: 2px;
 }
-
+/* Icons */
 #yt-button, #insta-button {
     color: #ddd;
     font-size: 35px;
@@ -126,7 +132,7 @@ main {
     font-size: 35px;
     margin: 0 12px;
 }
-
+/* Fotos */
 .bandbig {
     width: 100%; 
     height: auto;
@@ -141,9 +147,61 @@ main {
     margin-bottom: 1.2rem;
     display: none;
 }
+/* Kontaktformular */
+form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
 
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 95%;
+  padding: 0.6rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #888;
+  outline: none;
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  background: #3c3c3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #555;
+}
 /* Mobile style */
 @media (max-width:768px) {
+    /* Header */
     .container {
         height: auto;
         flex-direction: row;
@@ -180,6 +238,7 @@ main {
     #nav-toggle:checked~.nav {
         display: flex
     }
+    /* Fotos */
     .bandbig {
         display: none;
     }
