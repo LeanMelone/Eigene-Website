@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 1.2rem auto;
     padding: 0 1rem
 }
@@ -64,7 +64,7 @@ h3 {
 
 /* Header */
 .container {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -81,7 +81,7 @@ h3 {
 }
 
 .active {
-    border: 1px solid #343434;
+    border: 2px solid #343434;
 }
 
 .nav {
@@ -176,7 +176,7 @@ h3 {
 
 .bild-container {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .social-icons {
@@ -220,6 +220,10 @@ h3 {
 
 /* Mobile style */
 @media (max-width:768px) {
+    main {
+        max-width: 90%;
+    }
+    
     h2 {
         font-size: 2.8rem;
         text-align: center;
@@ -239,10 +243,10 @@ h3 {
 
     /* Header */
     .container {
-        height: auto;
+        max-width: 90%;
         flex-direction: row;
         gap: 0.6rem;
-        padding: 0.6rem 1rem
+        padding: 0 1rem
     }
 
     .nav {
@@ -268,7 +272,8 @@ h3 {
     }
 
     .nav-toggle {
-        display: inline-block
+        display: inline-block;
+        align-self: center;
     }
 
     #nav-toggle:checked~.nav {

@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 1.2rem auto;
     padding: 0 1rem
 }
@@ -64,7 +64,7 @@ h3 {
 
 /* Header */
 .container {
-    max-width: 1000px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
@@ -120,6 +120,7 @@ h3 {
     font-size: 1.5rem;
     cursor: pointer;
     color: #bbc;
+    margin: 0;
 }
 
 /* Linie */
@@ -172,7 +173,7 @@ h3 {
 
 .bild-container {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
 .social-icons {
@@ -269,12 +270,16 @@ textarea:focus {
 /* Mobile style */
 @media (max-width:768px) {
 
+    main {
+        max-width: 90%;
+    }
+
     /* Header */
     .container {
-        height: auto;
+        max-width: 90%;
         flex-direction: row;
         gap: 0.6rem;
-        padding: 0.6rem 1rem
+        padding: 0 1rem
     }
 
     .nav {
@@ -300,7 +305,9 @@ textarea:focus {
     }
 
     .nav-toggle {
-        display: inline-block
+        display: inline-block;
+        align-self: center;
+        margin: 0;
     }
 
     #nav-toggle:checked~.nav {
